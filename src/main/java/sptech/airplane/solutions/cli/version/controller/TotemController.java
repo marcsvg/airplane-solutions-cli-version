@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TotemController {
     public Totem getTotemByToken(String token) {
-        Conexao con = new Conexao("mysql");
+        Conexao con = new Conexao("sql");
         JdbcTemplate cursor = con.getConnection();
 
         List<Totem> totemAchado = cursor.query(

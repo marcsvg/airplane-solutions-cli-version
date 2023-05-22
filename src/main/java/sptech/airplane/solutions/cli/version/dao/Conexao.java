@@ -28,8 +28,6 @@ public class Conexao {
     }
 
     public JdbcTemplate getConnection() {
-        System.out.println("Procurando dados");
-
         return connection;
     }
 }

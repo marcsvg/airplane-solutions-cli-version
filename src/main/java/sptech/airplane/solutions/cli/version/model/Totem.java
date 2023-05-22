@@ -90,15 +90,15 @@ public class Totem {
 
     @Override
     public String toString() {
-        return "Totem{" +
-                "idTotem=" + idTotem +
-                ", fkCompanhia=" + fkCompanhia +
-                ", token='" + token + '\'' +
-                ", fabricante='" + fabricante + '\'' +
-                ", arquitetura='" + arquitetura + '\'' +
-                ", sistemaOperacional='" + sistemaOperacional + '\'' +
-                ", processador='" + processador + '\'' +
-                ", localizacaoTotem='" + localizacaoTotem + '\'' +
-                '}';
+        return "Totem: " +
+                "\nidTotem= " + idTotem +
+                "\nfkCompanhia=" + fkCompanhia +
+                "\ntoken= " + token +
+                "\nfabricante= " + fabricante +
+                "\narquitetura= " + arquitetura +
+                "\nsistemaOperacional= " + sistemaOperacional +
+                "\nprocessador= " + processador +
+                "\nlocalizacaoTotem= " + localizacaoTotem +
+                "\n";
     }
 }
