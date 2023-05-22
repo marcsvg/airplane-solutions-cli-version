@@ -1,24 +1,24 @@
-package sptech.airplane.solutions.cli.version;
+package sptech.airplane.solutions.cli.version.model;
 
 public class Totem {
     private Integer idTotem;
+    private Integer fkCompanhia;
+    private String token;
     private String fabricante;
     private String arquitetura;
     private String sistemaOperacional;
     private String processador;
     private String localizacaoTotem;
-    private Integer fkCompanhia;
-    private String token;
 
-    public Totem(Integer idTotem, String fabricante, String arquitetura, String sistemaOperacional, String processador, String localizacaoTotem, Integer fkCompanhia, String token) {
+    public Totem(Integer idTotem, Integer fkCompanhia, String token, String fabricante, String arquitetura, String sistemaOperacional, String processador, String localizacaoTotem) {
         this.idTotem = idTotem;
+        this.fkCompanhia = fkCompanhia;
+        this.token = token;
         this.fabricante = fabricante;
         this.arquitetura = arquitetura;
         this.sistemaOperacional = sistemaOperacional;
         this.processador = processador;
         this.localizacaoTotem = localizacaoTotem;
-        this.fkCompanhia = fkCompanhia;
-        this.token = token;
     }
 
     public Totem() {
@@ -30,6 +30,22 @@ public class Totem {
 
     public void setIdTotem(Integer idTotem) {
         this.idTotem = idTotem;
+    }
+
+    public Integer getFkCompanhia() {
+        return fkCompanhia;
+    }
+
+    public void setFkCompanhia(Integer fkCompanhia) {
+        this.fkCompanhia = fkCompanhia;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getFabricante() {
@@ -72,33 +88,17 @@ public class Totem {
         this.localizacaoTotem = localizacaoTotem;
     }
 
-    public Integer getFkCompanhia() {
-        return fkCompanhia;
-    }
-
-    public void setFkCompanhia(Integer fkCompanhia) {
-        this.fkCompanhia = fkCompanhia;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
     @Override
     public String toString() {
         return "Totem{" +
                 "idTotem=" + idTotem +
+                ", fkCompanhia=" + fkCompanhia +
+                ", token='" + token + '\'' +
                 ", fabricante='" + fabricante + '\'' +
                 ", arquitetura='" + arquitetura + '\'' +
                 ", sistemaOperacional='" + sistemaOperacional + '\'' +
                 ", processador='" + processador + '\'' +
                 ", localizacaoTotem='" + localizacaoTotem + '\'' +
-                ", fkCompanhia=" + fkCompanhia +
-                ", token='" + token + '\'' +
                 '}';
     }
 }
